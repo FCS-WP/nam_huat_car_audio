@@ -13,15 +13,17 @@
 .homepage-slider .slider.active {
   display: flex;
   opacity: 1;
-  animation: fadeIn 1s ease;
+  animation: slideIn 0.6s ease;
 }
 
-@keyframes fadeIn {
+@keyframes slideIn {
   from {
     opacity: 0;
+    transform: translateX(50%);
   }
   to {
     opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -40,11 +42,11 @@
 }
 
 .homepage-slider .slider-nav:hover {
-  background-color: #efefef !important;
+  background-color: transparent !important;
 }
 
 .homepage-slider .slider-nav:focus {
-  background-color: #efefef !important;
+  background-color: transparent !important;
 }
 
 .homepage-slider .slider-nav.prev {
