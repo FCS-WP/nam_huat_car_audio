@@ -51,9 +51,16 @@
 
 .homepage-slider .slider-nav.prev {
   left: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 }
 .homepage-slider .slider-nav.next {
   right: 10px;
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 }
 
 .card-product {

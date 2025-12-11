@@ -3,9 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!container) return;
 
   const allPosts = JSON.parse(container.dataset.posts);
+  console.log(allPosts);
 
   const listEl = document.getElementById("post-list");
   const searchInput = document.getElementById("post-search-input");
+
+  const initialPosts = allPosts.slice(0, 4);
 
   function renderPosts(posts) {
     listEl.innerHTML = posts
@@ -22,13 +25,13 @@ document.addEventListener("DOMContentLoaded", function () {
       .join("");
   }
 
-  renderPosts(allPosts.slice(0, 4));
+  renderPosts(initialPosts);
 
   searchInput.addEventListener("input", function () {
-    const keyword = this.value.toLowerCase();
+    const keyword = this.value.toLowerCase().trim();
 
-    if (!keyword.trim()) {
-      renderPosts(allPosts.slice(0, 4));
+    if (keyword === "") {
+      renderPosts(initialPosts);
       return;
     }
 
