@@ -1,3 +1,16 @@
+@import "./components/post_search_list.scss";
+@import "./components/custom_post_list.scss";
+@import "./components/product_filter_layout.scss";
+@import "./pages/cart";
+@import "./pages/home";
+@import "./components/footer";
+
+.text-link {
+  a {
+    color: #1d266f !important;
+  }
+}
+
 // Container form
 .form-wrapper {
   .form-heading-icon {
@@ -124,7 +137,7 @@
         }
       }
     }
-    //Submit button 
+    //Submit button
     // .e-form__buttons.elementor-column{
 
     // }
