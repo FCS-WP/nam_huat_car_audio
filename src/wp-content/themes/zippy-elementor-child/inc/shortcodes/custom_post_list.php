@@ -7,6 +7,7 @@ function shortcode_custom_post_list()
         'post_type' => 'post',
         'orderby' => 'date',
         'order' => 'DESC',
+        'offset' => 1,
         'category__not_in' => [$excluded_cat_id],
     ]);
 

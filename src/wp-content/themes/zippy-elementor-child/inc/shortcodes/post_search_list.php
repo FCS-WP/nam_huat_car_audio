@@ -31,12 +31,6 @@ function shortcode_post_search_list()
     <div id="post-search-component"
         data-posts='<?php echo json_encode($posts_json); ?>'
         style="max-width:500px;">
-
-        <input id="post-search-input"
-            type="text"
-            placeholder="Search posts..."
-            style="width:100%;padding:12px;border-radius:8px;border:1px solid #ddd;margin-bottom:15px;" />
-
         <div id="post-list"></div>
     </div>
 <?php
