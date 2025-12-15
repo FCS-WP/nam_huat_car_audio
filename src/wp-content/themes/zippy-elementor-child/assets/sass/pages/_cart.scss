@@ -49,3 +49,28 @@
     min-width: 100%;
   }
 }
+
+// Mini cart
+.elementor-menu-cart__footer-buttons .elementor-button--view-cart {
+  background-color: #1d266f !important;
+  color: #fff !important;
+  border-radius: 40px !important;
+  padding: 12px 24px;
+  font-weight: 600;
+  border: none;
+}
+
+.elementor-menu-cart__footer-buttons .elementor-button--checkout {
+  background-color: #1d266f !important;
+  color: #fff !important;
+  border-radius: 40px !important;
+  padding: 12px 24px;
+  font-weight: 600;
+  border: none;
+}
+
+.elementor-menu-cart__product-name {
+  a {
+    color: #000 !important;
+  }
+}
